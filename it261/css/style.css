@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: paleturquoise;
+  width: 100vw;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  height: clamp(50px, 7.5vh, 80px);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+body {
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  margin-top: clamp(50px, 7.5vh, 80px);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.show-list-st {
+  list-style: disc;
+}
+
+img {
+  object-fit: cover;
+}
