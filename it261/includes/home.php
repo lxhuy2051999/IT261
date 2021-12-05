@@ -97,6 +97,12 @@
                             <li><a href="./weeks/week7/pictures.php">pictures</a></li>
                         </ul>
                     </li>
+                    <p>Week 8</p>
+                        <ul class="show-list-st">
+                            <li><a href="weeks/week8/people.php">people</a></li>
+                            <li><a href="weeks/week8/people-view.php">people view</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </aside>
         </div>

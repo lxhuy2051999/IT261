@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 400px;
+  margin: 30px auto;
+}
+
+fieldset {
+  border-top: 1px solid red;
+  padding: 12px;
+}
+
+legend {
+  font-style: 1.2em;
+  font-style: italic;
+  color: coral;
+}
+
+label {
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+  font-style: italic;
+}
+
+p,
+a {
+  margin: auto;
+  text-align: center;
+}

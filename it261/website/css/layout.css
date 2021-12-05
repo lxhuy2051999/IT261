@@ -134,7 +134,7 @@
 }
 
 .bg-black {
-  background-color: var(--black) !important;
+  background-color: var(--black);
 }
 .bg-black-transparent {
   background-color: var(--black-transparent);
@@ -217,10 +217,6 @@
 
 .h-auto {
   height: auto !important;
-}
-
-.h-80 {
-  height: 80%;
 }
 
 .full-screen {
@@ -338,9 +334,6 @@
 
 .over-fl-y-vi {
   overflow-y: scroll;
-}
-.over-fl-x-hi {
-  overflow-x: hidden;
 }
 
 .bg-layer-black {
