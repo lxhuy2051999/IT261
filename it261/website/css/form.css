@@ -1,3 +1,4 @@
+@import url('variables.css');
 * {
   margin: 0;
   padding: 0;
@@ -5,62 +6,81 @@
 }
 
 body {
-  background: beige;
+  background: var(--light-blue);
 }
 
 form {
-  width: 400px;
+  width: 600px;
   margin: 30px auto;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
+  color: var(--dark-blue);
+  font-size: 1.2rem;
+
 }
 
 fieldset {
-  padding: 8px;
-  border: 1px solid red;
+  width: 100%;
+  padding: var(--desktop-padding);
+  border: 3px solid var(--blue);
+  border-radius: 10px;
 }
 
-.box {
-  width: 400px;
-  margin: 10px auto;
-  border: 2px solid green;
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 100%;
 }
 
-input {
+input:not([type="submit"]) {
   margin-bottom: 10px;
-}
-
-input[type="radio"] {
-  margin-right: 5px;
-}
-
-form ul {
-  margin-left: 10px;
-  margin-bottom: 10px;
-  list-style: none;
+  color: var(--dark-blue);
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 5px;
+  border: 3px solid var(--blue);
 }
 
 .error {
-  color: red;
-  display: block;
-  text-align: center;
-  font-style: 1.4em;
-}
-select {
-  display: block;
-  margin-bottom: 20px;
+  color: var(--red);
+  text-decoration: italic;
 }
 
 .btn,
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
   padding: 10px;
-  border: 1px solid gray;
-  cursor: pointer;
+  border: 2px solid var(--blue);
+  cursor: pointer !important;
   border-radius: 5px;
   background-color: white;
-  color: gray;
-  text-decoration: none;
+  color: var(--blue);
+  font-size: 1rem;
+}
+
+.other-actions{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+h1{
+  color: var(--blue);
+}
+
+h4{
+  color: var(--dark-blue);
+  font-size: 1.2rem;
 }
