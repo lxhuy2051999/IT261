@@ -1,0 +1,30 @@
+:root {
+  --black: #333533;
+  --black-transparent: #3335337a;
+  --white: #fefeff;
+  --white-transparent: #fefeffd5;
+  --yellow: #ffea00;
+  --red: #e98282;
+  --green: #99f09d;
+  --light-blue: #caf0f8;
+  --blue: #a2d2ff;
+  --dark-blue: #03045e;
+
+  /* font sizes */
+  --small: 0.8rem;
+  --medium: 1rem;
+  --large: 1.5rem;
+
+  /* paddings */
+  --desktop-padding: 60px;
+  --mobile-padding: 20px;
+}
+
+@keyframes scroll-down-animation {
+  0% {
+    transform: translate(-50%, -400%);
+  }
+  100% {
+    transform: translate(-50%, -300%);
+  }
+}
