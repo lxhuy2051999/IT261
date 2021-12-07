@@ -1,7 +1,24 @@
 <?php
+session_start();
 include 'config.php';
-include('./includes/header.php');
+
+if(!isset($_SESSION['username'])){
+    $_SESSION['msg'] = 'You  must login first';
+    header('Location: login.php');
+}
+
+if(isset($_GET['logout'])){
+    session_destroy();
+    unset($_SESSION['username']);
+    header('Location: login.php');
+}
+
+ if(isset($_SESSION['success'])) {
+    unset($_SESSION['success']);
+}
 ?>
+<?php if(isset($_SESSION['username'])) : ?>
+<?php include('./includes/header.php'); ?>
 <div class="page-content-wrapper w-100 box-padding fl-col-top h-auto fl-gap">
     <div class="main-wrapper fl-row-wide w-100 fl-gap">
         <main class="fl-col-8 fl-col-top fl-gap box-padding">
@@ -12,8 +29,8 @@ include('./includes/header.php');
         </div>
     </div>
 </div>
+
 <?
+endif;
 include('./includes/footer.php');
-
 ?>
-

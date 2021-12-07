@@ -1,15 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
+include 'config.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/form.css">
-    <title>Calculator</title>
-</head>
+if(!isset($_SESSION['username'])){
+    $_SESSION['msg'] = 'You  must login first';
+    header('Location: login.php');
+}
 
-<body>
+if(isset($_GET['logout'])){
+    session_destroy();
+    unset($_SESSION['username']);
+    header('Location: login.php');
+}
+
+ if(isset($_SESSION['success'])) {
+    unset($_SESSION['success']);
+}
+?>
+<?php if(isset($_SESSION['username'])) : ?>
+<?php include('./includes/header.php'); ?>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <fieldset>
             <label for="name">Name</label>
@@ -147,6 +156,6 @@
     }
 
     ?>
-</body>
-
-</html>
+<?php
+endif;
+ include 'includes/footer.php'; ?>
