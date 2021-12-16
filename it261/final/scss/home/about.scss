@@ -1,0 +1,22 @@
+.about{
+    grid-column: 4 / -4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 80px 60px;
+
+    h1{
+        width: 100%;
+        font-size: var(--xlarge);
+        text-align:center;
+        margin-bottom: 50px;
+    }
+
+    p{
+        width: 100%;
+        text-align:justify;
+        font-size: var(--medium);
+    }
+}

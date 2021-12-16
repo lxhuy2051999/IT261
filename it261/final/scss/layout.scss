@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    font-family: Jost, serif;
+}
+
+body{
+    width: 100%;
+    min-width: 1280px;
+}
+
+.container{
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 60px repeat(12, 1fr) 60px;
+
+}
+
+button,
+btn{
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+h1{
+    font-size: var(--large);
+    font-weight: 800;
+}
+
+.thank{
+    grid-column: 2/-2;
+    width: 100%;
+    font-size: var(--xlarge);
+    color: var(--dark-blue);
+    padding: 80px 60px;
+    margin-bottom: auto;
+
+}

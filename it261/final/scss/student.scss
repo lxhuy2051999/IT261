@@ -1,0 +1,38 @@
+.actions-container{
+    grid-column: 4/-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-count: 4;
+    gap: 35px;
+    padding: 80px 0px;
+    flex-wrap: wrap;
+
+    .action{
+        --size: 200px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50px;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  35px 35px 70px #bebebe,
+             -35px -35px 70px #ffffff;
+
+        color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+
+        i{
+            color: var(--blue);
+            font-size: calc(var(--xlarge) * 2);
+        }
+
+        .name{
+            font-size: var(--medium);
+            text-decoration:none;
+        }
+    }
+}

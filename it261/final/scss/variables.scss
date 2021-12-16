@@ -1,0 +1,34 @@
+:root {
+  --black: #333533;
+  --black-transparent: #3335337a;
+  --white: #fefeff;
+  --white-transparent: #fefeffd5;
+  --yellow: #ffea00;
+  --red: #e98282;
+  --green: #99f09d;
+  --light-blue: #caf0f8;
+  --blue: #a2d2ff;
+  --dark-blue: #03045e;
+  --orange: #FF9E00;
+  --light-orange: #FFC628;
+
+  /* font sizes */
+  --xsmall: 1rem;
+  --small: 1.2rem;
+  --medium: 1.5rem;
+  --large: 2rem;
+  --xlarge: 2.5rem;
+
+  /* paddings */
+  --desktop-padding: 60px;
+  --mobile-padding: 20px;
+}
+
+@keyframes scroll-down-animation {
+  0% {
+    transform: translate(-50%, -400%);
+  }
+  100% {
+    transform: translate(-50%, -300%);
+  }
+}

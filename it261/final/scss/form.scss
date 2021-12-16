@@ -1,0 +1,89 @@
+﻿.form-wrapper{
+    --gap: 35px;
+    
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./../images/seattle-central-college.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+
+    form{
+        width: 500px;
+        height: auto;
+        padding: 60px;
+        margin: 60px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 5px solid var(--black);
+        border-radius: 10px;
+        background-color: var(--white);
+        gap: 30px;
+
+        h1{
+            color: var(--blue);
+            text-align: center;
+            font-size: var(--large);
+        }
+
+        *{
+
+        font-size: var(--small);
+        }
+
+
+        fieldset{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+            border: none;
+            outline: none;
+
+            .form-group{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                row-gap: 10px;
+                margin-bottom: 20px;
+
+                input{
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .buttons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button{
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+
+            &:focus{
+                outline: 2px solid var(--blue);
+            }
+        }
+
+    }
+}
